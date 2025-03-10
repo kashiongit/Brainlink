@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import React from 'react'
+
+import Button from "./components/Button"
 import './App.css'
 
 function App() {
@@ -7,9 +7,13 @@ function App() {
   return (
     <>
       
-        <div className = "bg-red-600"> hii there </div>
+        
+       <div className="bg-black border-r-amber-700 flex">
+          <Button variant = "primary" text = "Add Content"></Button>
+          <Button variant = "secondary" text = "Share Brain"></Button>
+       </div>
     </>
   )
 }
 
-export default App
+export default App;
