@@ -1,9 +1,9 @@
-// import  { ReactElement } from "react";
+ import  { ReactElement } from "react";
 
 interface ButtonProps {
     variant: "primary" | "secondary";
     text: String;
-    // startIcon: ReactElement;
+    startIcon: ReactElement;
 }
 const variantClasses = {
     "primary" : "bg-purple-600 text-white padding",
