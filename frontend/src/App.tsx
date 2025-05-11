@@ -1,18 +1,31 @@
 
-import Button from "./components/Button"
-import './App.css'
+// import Button from "./components/Button"
+// import './App.css'
+// import ShareIcon from "./icons/ShareIcon";
+// import PlusIcon from "./icons/PlusIcon";
+
+import Sidebar from "./components/Sidebar";
+
+ import Card from "./components/Card";
+ import Sidebar from "./components/Sidebar";
+
 
 function App() {
  
   return (
-    <>
+    <div className="bg-black">
+      <Sidebar/>
+      {/* <HeroSectionOne/> */}
+      <Sidebar/>
+      <Card/>
+    </div>
       
         
-       <div className="bg-black border-r-amber-700 flex">
-          <Button variant = "primary" text = "Add Content"></Button>
-          <Button variant = "secondary" text = "Share Brain"></Button>
-       </div>
-    </>
+      
+
+      
+
+    
   )
 }
 

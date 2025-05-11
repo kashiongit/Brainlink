@@ -1,22 +1,26 @@
-// import  { ReactElement } from "react";
+import  { ReactElement } from "react";
 
 interface ButtonProps {
     variant: "primary" | "secondary";
     text: String;
-    // startIcon: ReactElement;
+    startIcon: ReactElement;
+    onClick?: () => void;
 }
 const variantClasses = {
-    "primary" : "bg-purple-600 text-white padding",
-    "secondary" : " bg-purple-200 text-purple-600",
+    "primary" : "bg-purple text-white px-2 py-2  borderRadius-md",
+    "secondary" : " bg-purple  text-white  px-2 py-2 ",
 
 };
 
-const defaultStyles = "px-4 py-4 rounded-md font-light";
+const defaultStyles = "px-2 py-2 rounded-md font-light flex justify-center items-center";
 
-const Button = ({ variant, text}: ButtonProps) => {
+const Button = ({ variant, text , startIcon, onClick }: ButtonProps) => {
     return (
-        <button className={variantClasses[variant] + " " + defaultStyles}>
-            {text}
+        <button className={  variantClasses[variant] + " " + defaultStyles}>
+         <div className="pr-2">
+            {startIcon}
+         </div>
+           {text}
         </button>
     );
 };
