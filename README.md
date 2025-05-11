@@ -53,12 +53,13 @@ npm run dev
         ▪ Backend .env:
 
 PORT=3000
+
 MONGO_URI=<your-mongodb-uri>
+
 JWT_SECRET=<your-secret-key>
 
         ▪ Frontend .env:
 
-VITE_BASE_URL=<backend-api-url>
 ✨ Key Functionalities
 • Save and Categorize: Keep your links organized by categories or tags.
 • Explore Shared Brains: Discover resources shared by other users.
