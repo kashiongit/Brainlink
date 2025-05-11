@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+BrainLink 🧠
+BrainLink is a web application designed to help users efficiently store and organize their important links, including YouTube videos, tweets, Notion documents, and websites. The app serves as a digital second brain, enabling users to manage their knowledge and resources effectively. Users can also choose to share their "brain" with the world, creating a collaborative knowledge-sharing platform.🚀 Features
+• Organize Your Links: Save and categorize YouTube videos, tweets, Notion docs, and websites in one place.
+• Personalized Second Brain: Build a structured repository of resources tailored to your needs.
+• Sharing Made Easy: Optionally share your collection with others and explore shared brains for new insights.
+• Search and Filter: Quickly find stored links using robust search and filter functionality.
+• Responsive Design: Optimized for both desktop and mobile devices.
+• User-Friendly Interface: Intuitive design for easy navigation and management.🛠️ Tech StackFrontend:
+• Framework: React with TypeScript
+• Styling: Tailwind CSS
+• Build Tool: ViteBackend:
+• Framework: Node.js with Express
+• Database: MongoDB for data storage
+• Authentication: JWT (JSON Web Tokens)🌐 Live Demo
+Link🏗️ Folder Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+secondbrainapp/
+├── Backend/          # Contains the server-side code
+│   ├── src/          # Backend source files
+│   ├── .env          # Environment variables for the backend
+│   └── package.json
+├── Frontend/         # Contains the client-side code
+│   ├── src/          # Frontend source files
+│   ├── public/       # Public assets like logos
+│   └── package.json
+└── README.md         # Project documentation
+⚙️ Installation and Setup
+1. Clone the repository:
 
-Currently, two official plugins are available:
+git clone https://github.com/Devansh-Sabharwal/BrainDock.git
+cd BrainDock
+2. Setup Backend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+cd Backend
+npm install
+npm run dev
+3. Setup Frontend:
 
-## Expanding the ESLint configuration
+cd ../Frontend
+npm install
+npm run dev
+4. Environment Variables:
+    ◦ Create .env files in the respective folders with the following:
+        ▪ Backend .env:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+PORT=3000
+MONGO_URI=<your-mongodb-uri>
+JWT_SECRET=<your-secret-key>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+        ▪ Frontend .env:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+VITE_BASE_URL=<backend-api-url>
+✨ Key Functionalities
+• Save and Categorize: Keep your links organized by categories or tags.
+• Explore Shared Brains: Discover resources shared by other users.
