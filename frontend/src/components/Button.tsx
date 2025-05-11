@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 import  { ReactElement } from "react";
+=======
+ import  { ReactElement } from "react";
+>>>>>>> 749edaba65c36461a4cd3e66bc8f0b014bee515e
 
 interface ButtonProps {
     variant: "primary" | "secondary";
     text: String;
     startIcon: ReactElement;
+<<<<<<< HEAD
     onClick?: () => void;
+=======
+>>>>>>> 749edaba65c36461a4cd3e66bc8f0b014bee515e
 }
 const variantClasses = {
     "primary" : "bg-purple text-white px-2 py-2  borderRadius-md",
