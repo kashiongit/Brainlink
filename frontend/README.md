@@ -14,7 +14,7 @@ BrainLink is a web application designed to help users efficiently store and org
 • Authentication: JWT (JSON Web Tokens)🌐 Live Demo
 Link🏗️ Folder Structure
 
-secondbrainapp/
+BrainLink/
 ├── Backend/          # Contains the server-side code
 │   ├── src/          # Backend source files
 │   ├── .env          # Environment variables for the backend
@@ -27,8 +27,9 @@ secondbrainapp/
 ⚙️ Installation and Setup
 1. Clone the repository:
 
-git clone https://github.com/Devansh-Sabharwal/BrainDock.git
-cd BrainDock
+git clone https://github.com/kashiongit/Brainlink.git
+
+cd BrainLink
 2. Setup Backend:
 
 cd Backend
@@ -53,3 +54,7 @@ VITE_BASE_URL=<backend-api-url>
 ✨ Key Functionalities
 • Save and Categorize: Keep your links organized by categories or tags.
 • Explore Shared Brains: Discover resources shared by other users.
+
+
+THIS PROJECT IS UNDER CONSTRUCTION -----
+CURRENTLY WORKING ON FRONTEND COMPONENTS
